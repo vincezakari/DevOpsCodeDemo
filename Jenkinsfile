@@ -20,7 +20,7 @@
                 }
                 }
                 stage('CodeReview'){
-                    agent {label 'slave2'}
+                    agent {label 'slave1'}
                     steps{
                     
                 echo 'codeReview...'
