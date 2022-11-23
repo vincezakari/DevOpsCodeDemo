@@ -9,7 +9,7 @@
                     agent any
                     steps{
                 echo 'cloning...'
-                        git 'https://github.com/Sonal0409/DevOpsCodeDemo.git'
+                        git 'https://github.com/theitern/DevOpsCodeDemo.git'
                     }
                 }
                 stage('Compile'){
