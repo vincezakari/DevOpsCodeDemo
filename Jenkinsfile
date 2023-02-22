@@ -1,7 +1,7 @@
 pipeline{
     tools{
-        jdk 'myjava'
-        maven 'mymaven'
+        jdk 'ourjava'
+        maven 'ourmaven'
     }
 	agent any
       stages{
@@ -20,13 +20,13 @@ pipeline{
           stage('CodeReview'){
               steps{
 		    
-		  echo 'codeReview'
+		  echo 'I am now doing codeReview ooo'
                   sh 'mvn pmd:pmd'
               }
           }
            stage('UnitTest'){
               steps{
-	         echo 'Testing'
+	         echo 'It is now time for Unit Testing'
                   sh 'mvn test'
               }
                post {
@@ -42,4 +42,3 @@ pipeline{
           }
       }
 }
-
