@@ -17,7 +17,7 @@ pipeline{
                   sh 'mvn compile'
 	      }
           }
-          stage('CodeReview'){
+          stage('I am now doing codeReview ooo'){
               steps{
 		    
 		  echo 'I am now doing codeReview ooo'
