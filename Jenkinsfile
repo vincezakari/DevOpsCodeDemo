@@ -17,7 +17,7 @@
                     steps{
                         echo 'compiling...'
                         sh 'mvn compile'
-                }
+                    }
                 }
                 stage('CodeReview'){
                     agent {label 'Slave2'}
@@ -37,7 +37,7 @@
                     success {
                         junit 'target/surefire-reports/*.xml'
                     }
-                }	
+                    }	
                 }
                 stage('Package'){
                     agent any
